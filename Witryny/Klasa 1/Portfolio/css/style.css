@@ -1,0 +1,118 @@
+body {
+    background-color: #333333;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0%;
+    color: white;
+}
+
+#container {
+    width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    font-family: 'Hachi Maru Pop', cursive;
+    float: left;
+    font-size: 80px;
+    width: 1300px;
+    text-align: center;
+}
+
+#zegar {
+    font-family: 'Hachi Maru Pop', cursive;
+    float: left;
+    font-size: 80px;
+    text-align: center;
+}
+
+#tekstowy {
+    background-color: #555555;
+    text-align: center;
+    min-height: 500px;
+    font-size: 45px;
+    float: left;
+}
+
+#blokowy {
+    width: 800px;
+    min-height: 400px;
+    float: left;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+#fb {
+    background-color: #4668B3;
+}
+
+#fb:hover {
+    background-color: #3557A2;
+}
+
+#yt {
+    background-color: #D94348;
+}
+
+#yt:hover {
+    background-color: #C83237;
+}
+
+#twit {
+    background-color: #3095D3;
+}
+
+#twit:hover {
+    background-color: #2084C2;
+}
+
+#git {
+    background-color: #1F1B24;
+}
+
+#git:hover {
+    background-color: #0E0A13;
+}
+
+.czyszczacy {
+    clear: both;
+}
+
+.square {
+    width: 1000px;
+    float: left;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rectangle {
+    width: 100%;
+    padding: 50px;
+}
+
+.tile1 {
+    margin: 10px;
+    width: 360px;
+    height: 222px;
+    background-color: #3095D3;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+}
+
+.tile1:hover {
+    background-color: #2084C2;
+}
+
+.tile2 {
+    margin: 50px;
+    width: 360px;
+    height: 222px;
+    float: left;
+}
+
+a.tilelink {
+    color: #ffffff;
+    text-decoration: none;
+}
