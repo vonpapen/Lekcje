@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        function uruchom(){
+            let elementDiv = document.getElementById("div1");
+            elementDiv.innerHTML = "Nowy tekst";
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick=uruchom() value="komunikat"/>
+    
+    <div id="div1">Stary tekst</div>
+</body>
+</html>
