@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+
+    <script>
+        class Osoba{
+            constructor(imie, nazwisko, telefon){
+                this.imie=imie;
+                this.nazwisko=nazwisko;
+                this.telefon=telefon;
+            }
+        }
+    </script>
+
+    <script>
+        let o = new Osoba("Kubuś", "Kakaszyński", 997);
+        alert("Imie: "+ o.imie + "\n" + "Nazwisko: "+ o.nazwisko + "\n"+ "Telefon: " + o.telefon);
+
+        let o1 = new Osoba("Jakub", "Kaliczyński", 998);
+        alert("Imie: "+ o1.imie + "\n" + "Nazwisko: "+ o1.nazwisko + "\n"+ "Telefon: " + o1.telefon);
+
+        Osoba.prototype.nowa="Nowa wartość";
+        alert(o1.nowa);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
