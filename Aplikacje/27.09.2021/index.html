@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karasie jedzą kupe</title>
+
+    <script>    
+        class Osoba{
+            constructor(imie, nazwisko, telefon){
+                this.imie=imie;
+                this.nazwisko=nazwisko;
+                this.telefon=telefon;
+            }
+
+            pokazDane(){
+                let wyswietl = this.imie +"\n" + this.nazwisko + "\n" + this.telefon;
+                return wyswietl;
+            }
+        }
+    </script>
+
+    <script>
+        let o = new Osoba("Kubuś", "Kakaszyński", 977);
+        
+        alert(o.pokazDane());
+
+        let zmiennaTektstowa = JSON.stringify(o);
+        alert(zmiennaTektstowa);
+
+        let nowyObiekt = JSON.parse(zmiennaTektstowa);
+        alert(nowyObiekt.imie);
+
+        let Samochod = {
+            "model" : "peżot",
+            "Marka": 407
+        }
+
+        alert(Samochod.model);
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
