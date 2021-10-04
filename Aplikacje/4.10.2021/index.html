@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkoła śmierdzi</title>
+</head>
+<body>
+    <script>
+        function Osoba(i, n, t){
+            this.imie = i;
+            this.nazwisko = n;
+            this.telefon = t;
+
+            this.pokazDane = function(){
+                alert(this.imie +"\n"+ this.nazwisko +"\n"+ this.telefon +"\n");
+            }
+        }
+
+    </script>
+
+    <script>
+        let o = new Osoba("Kakub","Jarasiński", 997);
+        o.pokazDane();
+
+        Osoba.prototype.pesel = 6060606060606060;
+        alert(o.pesel);
+    </script>
+</body>
+</html>
