@@ -42,6 +42,21 @@
     padding-left: 5em;
 }
 
+.przycisk {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    color: #292929;
+    font-weight: bold
+}
+
+.czcionkaLatoTest {
+    font-family: Lato;
+    font-size: 2em;
+}
+
 *,
 *::before,
 *::after {
@@ -10779,7 +10794,7 @@ h6 {
 }
 
 .cta-section .heading {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold
 }
 

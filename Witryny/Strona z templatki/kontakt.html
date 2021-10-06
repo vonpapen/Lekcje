@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Młody programista Jan Horodecki">
-    <meta name="author" content="Jan Horodecki">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="author" content="Jan Horodecki">    
+    <link rel="shortcut icon" href="favicon.ico"> 
     
     <!-- FontAwesome JS-->
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 <body>
     
     <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Jano Code</a></h1>
+	    <h2 class="blog-name pt-lg-4 mb-0"><a href="index.html">Jano Code</a></h2>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
            
@@ -43,8 +43,8 @@
 				</div><!--//profile-section-->
 				
 				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item active">
-					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Start <span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Start</a>
 					</li>
 					<li class="nav-item">
 					    <a class="nav-link" href="artykul.html"><i class="fas fa-newspaper fa-fw mr-2"></i>O projekcie</a>
@@ -58,8 +58,8 @@
 					<li class="nav-item">
 					    <a class="nav-link" href="wideo.html"><i class="fas fa-video fa-fw mr-2"></i>Symulator</a>
 					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="kontakt.html"><i class="fas fa-address-book fa-fw mr-2"></i>Kontakt</a>
+					<li class="nav-item active">
+					    <a class="nav-link" href="kontakt.html"><i class="fas fa-address-book fa-fw mr-2"></i>Kontakt <span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 			</div>
@@ -70,19 +70,50 @@
 
 		<section class="cta-section theme-bg-light py-5">
 			<div class="container text-center">
-				<h2 class="heading">
-					Jano Code
-				</h2>
-				<div class="intro">
-					Jestem młodym programistą, który uczęszcza na kierunek technik programista w Zespole Szkół Elektrycznych w Gorzowie Wielkopolskim
-				</div>
+				<h1 class="heading">
+					Informacje Kontaktowe
+				</h1>
 			</div>
 		</section>
-	    
+		<div class="container text-center">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2415.918311085481!2d15.236252415705552!3d52.73366647985516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47071f76f2c5e239%3A0x8029e9c8c90bbc3b!2zWmVzcMOzxYIgU3prw7PFgiBFbGVrdHJ5Y3pueWNo!5e0!3m2!1spl!2spl!4v1633342750998!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+			<h2 class="heading">
+				<br/>Dane Kontaktowe
+			</h2>
+
+			<h4 class="heading">
+				Zapraszamy do kontaktu na miejscu<br/> lub drogą internetową<br/>
+			</h4>
+
+
+			<ul id="kontakt">
+				<li><p><b>Telefon:</b> +48 698 905 727</p></li>
+				<li><p><b>Mail:</b> janocode@jano.pl</p></li>
+				<li><p><b>Adres:</b> Dąbrowskiego 33, 66-400 Gorzów Wielkopolski</p></li>
+			</ul>
+
+
+
+			<form action="mailto:janekhorodecki@gmail.com" method="post">
+				<h3>Formularz Kontaktowy</h3>
+				<p>Twoje imie: </p>
+				<input type="text" name="imie" size="50"/>
+				<p>Twoje nazwisko: </p>
+				<input type="text" name="nazwisko" size="50"/>
+				<p>Wiadomość: </p>
+				<textarea placeholder="Wiadomość"></textarea>
+				<br/><br/>
+				<input type="submit" value="Wyślij"/>
+			</form>
+			
+		</div>
+
 	    <footer class="footer text-center py-2 theme-bg-dark">
 		   
 	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Jano Code &copy 2021</small>
+                <small class="copyright">Jano Code &copy; 2021</small>
 		   
 	    </footer>
     
@@ -91,11 +122,7 @@
     <!-- Javascript -->          
     <script src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script src="assets/plugins/popper.min.js"></script> 
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-
-    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script src="assets/js/demo/style-switcher.js"></script>     
-    
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>      
 
 </body>
 </html> 
