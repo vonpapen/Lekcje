@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tytuł</title>
+    
+    <style>
+        table{
+            border: solid 5px rgb(255, 0, 128);
+        }    
+        td{
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            background: gray;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- <tr></tr> -->
+    </table>
+        
+    <script>
+        let table = document.querySelector("table");
+        let oznaczenia = [
+            ["a1","a2","a3"],
+            Array("b1","b2","b3"),
+            ["c1","c2"]
+        ];
+
+        for(let j=0;j<oznaczenia.length;j++){
+            let tr = document.createElement("tr");
+            table.appendChild(tr);
+        
+            for(let i=0; i<oznaczenia[j].length;i++){
+                let komorka=document.createElement("td");
+                komorka.innerHTML = i;
+                tr.appendChild(komorka);
+            }
+        }
+        
+    </script>
+</body>
+</html>
