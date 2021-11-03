@@ -11,16 +11,18 @@ nav {
     width: 30%;
     height: 600px;
     color: white;
+    float: left;
 }
 
 main {
-    background-color: rgb(230,green, blue);
+    background-color: rgb(230, 230, 230);
     width: 70%;
     height: 600px;
     font-size: 120%;
+    float: left;
 }
 
-footer{
+footer {
     background-color: rgb(142, 115, 110);
     color: white;
     text-align: right;

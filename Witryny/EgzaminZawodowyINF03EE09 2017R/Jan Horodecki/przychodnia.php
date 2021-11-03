@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="PL-pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Przychodnia</title>
     <link rel="stylesheet" href="przychodnia.css">
 </head>
+
 <body>
     <header>
         <h1>PRAKTYKA LEKARZA RODZINNEGO</h1>
@@ -21,20 +23,16 @@
 
             while($row = mysqli_fetch_row($result)){
                 echo $row[0];
-                echo ' ';
+                echo " ";
                 echo $row[1];
-                echo ' ';
+                echo " ";
                 echo $row[2];
                 echo '<br/>';
-            }
+            };
         ?>
 
-        <form action=
-        <?php $wybranaLiczba = $_GET["liczba"];
-        header("pacjent.php");
-        ?>
-        >
-            Podaj id:<br/>
+        <form action="pacjent.php">
+            Podaj id:<br />
             <input type="number" name="liczba">
 
             <input type="submit" value="Pokaż dane">
@@ -59,8 +57,11 @@
         <h2>INFORMACJE SZCZEGÓŁOWE O PACJENCIE</h2>
         <p>Brak wybranego pacjenta</p>
     </main>
+
+    <div style="clear: both;"></div>
     <footer>
         <small><i>Jan Horodecki 2TP</i></small>
     </footer>
 </body>
+
 </html>
