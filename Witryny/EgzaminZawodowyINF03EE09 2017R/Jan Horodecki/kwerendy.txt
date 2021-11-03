@@ -1,0 +1,3 @@
+Kwerenda1: SELECT id, imie, nazwisko FROM pacjenci
+Kwerenda2: SELECT imie, nazwisko, choroby_przewlekle, uczulenia FROM pacjenci WHERE id=1
+Kwerenda3: SELECT imie, nazwisko FROM pacjenci WHERE uczulenia="brak"
