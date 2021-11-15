@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let dane="ala kupiła kota w roku 1975. datadata urodzenia kota to 12-10-1975. Data smierci: 05-10-2021";
+        console.log(   /kupiła/.test(dane)   );
+        console.log(   /kupiła/.exec(dane)   );
+
+        //____________________________________________//
+
+        console.log(   /\d\d-\d\d-\d\d\d\d/.exec(dane)   );
+        console.log(   /\d\d-\d\d-2\d\d\d/.exec(dane)   );
+
+        console.log(   /[0-5][5-6]-\d\d-2\d\d\d/.exec(dane)   ); 
+        console.log(   /(data urodzenia)/.exec(dane)   );
+        console.log(   /(data){2}/.exec(dane)   );
+        console.log(   /(data){1}/.exec(dane)   );
+        console.log(   /(data){3}/.exec(dane)   );
+        console.log(   /(data)+/.exec(dane)   );
+
+        console.log(   /\d/.exec(dane)   ); // - litera
+        console.log(   /\s/.exec(dane)   ); // - znak bialy
+        console.log(   /\D/.exec(dane)   ); // - wszystko oprócz cyfr
+        console.log(   /\W/.exec(dane)   ); // - wszystko oprocz litery
+        console.log(   /\S/.exec(dane)   ); // - wszytstko oprocz znaku bialego
+        //____________________________________________//
+
+        console.log(   /(ota)/.exec(dane)   );
+        console.log(   /\w(ota)/.exec(dane)   );
+        console.log(   /\d\d\d\d/.exec(dane)   );
+        console.log(   /(kupił)\w/.exec(dane)   );
+        console.log(   /[\d^(19)]/.exec(dane)   );
+
+
+        
+        
+
+    </script>
+</body>
+</html>
