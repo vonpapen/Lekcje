@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        zero
+    </p>
+    <p>
+        jeden
+    </p>
+    <p>
+        dwa
+    </p>
+    <p>
+        trzy
+    </p>
+    <p>
+        cztery
+    </p>
+    <p>
+        pięć
+    </p>
+
+    
+    <input type="button" value="uruchom" onclick="f1()">
+    <input type="button" value="uruchom2" onclick="f2()">
+
+    <script>
+        let run = 0;
+        function f1(){
+            let akapity = document.getElementsByTagName("p");
+
+            for (let index = 0; index < akapity.length; index++) {
+                const element = akapity[index];
+                console.log(akapity[index].innerHTML)
+            }
+        
+            console.log(akapity[0].innerHTML)
+            run = run+1;
+            console.log(run);
+
+            
+            console.log("Zmienia akapity")
+            document.body.insertBefore(akapity[3],akapity[0]);
+
+
+
+            console.log(akapity[3].nextElementSibling.innerHTML);
+            console.log(akapity[3].nextElementSibling.parentNode.nodeName);
+            console.log(akapity[3].nextElementSibling.parentNode.childNodes.length);
+            console.log(akapity[3].nextElementSibling.parentNode.childNodes[16].textContent);
+            console.log(akapity[3].nextElementSibling.parentNode.firstChild.nodeType);
+
+            let p = document.createElement("p");
+            p.innerHTML = "zzz";
+            document.body.insertBefore(p,akapity[3]);
+
+            for (let index = 0; index < akapity.length; index++) {
+                const element = akapity[index];
+                if(element.innerHTML=="trzy"){
+                    document.body.insertBefore(p,akapity[index]);
+                }
+                console.log(akapity[index].innerHTML)
+            }
+      
+
+        };
+
+        function f2(){
+            let akapity = document.getElementsByTagName("p");
+            if (akapity[0].innerHTML!="zero") {
+                console.log("brud")
+                while(akapity[0].innerHTML!="zero"){
+                    document.body.insertBefore(akapity[3],akapity[0]);
+                };
+            }
+
+            console.log("Uprządkowano")
+        }
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>
